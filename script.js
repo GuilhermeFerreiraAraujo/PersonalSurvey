@@ -1,4 +1,4 @@
 
 window.onload = function() {
-    alert("All ready for start;");
+    //alert("All ready for start;");
 }

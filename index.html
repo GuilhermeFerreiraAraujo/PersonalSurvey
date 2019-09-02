@@ -1,21 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Project from freecodecamp web site created to in order to archive the TODO challanges and practice">
+    <meta name="description"
+        content="Project from freecodecamp web site created to in order to archive the TODO challanges and practice">
     <meta name="keywords" contet="HTML5, javascript, css, freecodecamp, Freelancer, Developer, CodeForFun">
     <meta name="author" content="Guilherme Ferreira de Araújo">
     <title>Personal Survey</title>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="script.js"></script>
 </head>
+
 <body>
     <header>
         <hgroup>
             <h1 id="title">Personal Survey</h1>
         </hgroup>
+        <p id="description">This is a personal survey from freecodecamp challenges. Please fill it up with care.</p>
     </header>
+
+    <div class="main">
+        <form class="survejform" id="survey-form">
+            <br />
+            <br />
+            <div class="fieldset grid">
+                <label id="name-label" class="column1" for="">Name: </label>
+                <input type="text" id="name" class="column2 custom-text-box" placeholder="Please enter your name" required/>
+            </div>
+
+            <div class="fieldset grid">
+                <label class="column1" id="email-label" for="email">Email:</label>
+                <input type="email" id="email" class="column2 custom-text-box" placeholder="Please enter your email" required/>
+            </div>
+
+
+            <div class="fieldset grid">
+                <label class="column1" for="number" id="number-label">Years of working experience</label>
+                <input type="number" class="column2 custom-text-box" name="" min="1" max="50" id="number"
+                    placeholder="Enter your working experience">
+            </div>
+
+            <div class="fieldset grid">
+                <label class="column1" for="dropdown" id="dropdown-label">Dropdown</label>
+                <div class="column2">
+                    <select name="" class="custom-text-box" id="dropdown">
+                        <option>Week</option>
+                        <option>Month</option>
+                        <option>Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="fieldset grid">
+                <label class="column1" for="">Gender</label>
+                <div class="column2 custom-text-box">
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+            </div>
+
+
+            <div class="fieldset grid">
+                <label class="column1" for="">Interests</label>
+                <div class="column2 checkbox-container">
+                    <input type="checkbox" class="custom-checkbox" name="frontEnd" value="frontEnd">Front end development<br>
+                    <input type="checkbox" class="custom-checkbox" name="backEnd" value="backEnd">Back end development<br>
+                    <input type="checkbox" class="custom-checkbox" name="fullstack" value="fullstack">Fullstack development<br>
+                    <input type="checkbox" class="custom-checkbox" name="database" value="database">Database administration<br>
+                    <input type="checkbox" class="custom-checkbox" name="other" value="other">Other<br>
+                </div>
+            </div>
+
+            <div class="fieldset grid">
+                <label class="column1" for="">What is your opinion about the survey</label>
+                <textarea class="custom-text-area" name="" id="comments" cols="30" rows="5"></textarea>
+            </div>
+
+            <button class="form-submit-button submitBtn" id="submit">Submit</button>
+        </form>
+    </div>
+
+
 </body>
+
 </html>
