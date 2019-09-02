@@ -1,1 +1,4 @@
-{\rtf1}
+
+window.onload = function() {
+    alert("All ready for start;");
+}
